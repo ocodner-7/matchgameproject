@@ -18,7 +18,7 @@
 
 
 .card-front, .card-back {
-    position: absolute;
+   
     width: 80%;
     height: 80%;
     padding: 20px;
