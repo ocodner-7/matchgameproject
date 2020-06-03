@@ -1,0 +1,15 @@
+.row {
+    text-align: center;
+}
+
+.match-card {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background-color: #eee;
+}
+
+.match-card:hover {
+    border:1px solid blue;
+}
