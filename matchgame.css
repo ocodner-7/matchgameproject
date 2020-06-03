@@ -11,5 +11,5 @@
 }
 
 .match-card:hover {
-    border:1px solid blue;
+   box-shadow: inset 0px 0px 0px 1px blue;
 }
