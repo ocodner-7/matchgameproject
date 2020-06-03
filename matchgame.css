@@ -10,6 +10,9 @@
     background-color: #eee;
     position: relative;
     margin: 5px;
+    border-radius: 5px;
+    justify-content: center;
+	align-items: center;
 }
 
 .match-card:hover {
@@ -22,5 +25,6 @@
     width: 80%;
     height: 80%;
     padding: 20px;
-    border-radius: 5px;
+
+    
 }
