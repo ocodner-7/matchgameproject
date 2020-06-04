@@ -28,6 +28,9 @@
    box-shadow: inset 0px 0px 0px 1px blue;
 }
 
+.match-card.match{
+    box-shadow: inset 0px 0px 0px 1px green;
+}
 
  .card-back {
     position: absolute;
@@ -47,6 +50,3 @@
     align-items: center
 }
 
-.match-card.flip{
-    transform: rotateY(180deg);
-}
