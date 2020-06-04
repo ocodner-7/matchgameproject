@@ -1,4 +1,6 @@
-const cards = document.getElementsByClassName('.match-card');
+const cardArray = [];
+
+let cardArray = document.querySelectorAll(".match-card")
 
 let cardHasTurned = false;
 let firstCard, secondCard;
@@ -28,4 +30,4 @@ if (!cardHasTurned) {
 }
 
 
-cards.forEach(card => addEventListener('click', turnCardOver));
+cards.forEach(card => card.addEventListener('click', turnCardOver));
