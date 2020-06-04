@@ -13,6 +13,12 @@
     border-radius: 5px;
     text-align:center;
     line-height: 100px;
+    transform: scale (1);
+}
+
+.match-card :active {
+    transform: scale(.96);
+    transition: transform .2s;
 }
 
 .match-card:hover {
