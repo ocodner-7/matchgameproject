@@ -1,4 +1,4 @@
-const cardArray = document.querySelectorAll(".match-card")
+const cards = document.querySelectorAll(".match-card")
 
 let cardHasTurned = false;
 let firstCard, secondCard;
