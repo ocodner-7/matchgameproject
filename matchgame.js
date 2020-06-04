@@ -5,7 +5,7 @@ let firstCard, secondCard;
 
 function turnCardOver() {
     console.log("Card has been clicked");
-    document.getElementsByClassName("match-card").classList.add('match');
+    this.classList.toggle('match');
 
     //First  card clicked
 if (!cardHasTurned) {
