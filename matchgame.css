@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+.matchgame{
+    perspective: 1000px;
+}
+
 .match-card {
     display: inline-block;
     width: 100px;
@@ -13,6 +17,7 @@
     border-radius: 5px;
     text-align:center;
     transform: scale (1);
+    flex-wrap: wrap;
 }
 
 .match-card :active {
@@ -41,4 +46,8 @@
     display: flex;
     justify-content: center;
     align-items: center
+}
+
+.match-card.flip{
+    transform: rotateY(180deg);
 }
