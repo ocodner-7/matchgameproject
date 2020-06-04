@@ -5,7 +5,16 @@ let firstCard, secondCard;
 
 function turnCardOver() {
     console.log("Card has been clicked");
-    this.classList.toggle('flip');
+    this.classList.add('flip');
+    
+if (!cardHasTurned) {
+    cardHasTurned = true;
+    firstCard = this;
+} else {
+    cardHasTurned = false;
+    secondCard = this;
+}
+
 }
 
 cards.forEach(card => addEventListener('click', turnCardOver));
