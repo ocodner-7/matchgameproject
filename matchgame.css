@@ -13,10 +13,6 @@
     border-radius: 5px;
     text-align:center;
     transform: scale (1);
-    margin-left: auto;
-    margin-bottom: auto;
-    margin-right: auto;
-    margin-top: auto;
 }
 
 .match-card :active {
@@ -33,6 +29,4 @@
     position: absolute;
     width: 80%;
     height: 80%;
-    padding: 20px;
-
 }
