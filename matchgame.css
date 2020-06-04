@@ -41,7 +41,7 @@
 }
 
 .card-front {
-    position: relative;
+    position: absolute;
     width: 50%;
     height: 50%;
     display: flex;
