@@ -24,8 +24,8 @@ if (!cardHasTurned) {
      } else {
          firstCard.classList.remove('match')
      }
+    }
 }
-
 
 
 cards.forEach(card => addEventListener('click', turnCardOver));
