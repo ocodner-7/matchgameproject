@@ -22,8 +22,10 @@ if (!cardHasTurned) {
         secondCard.removeEventListener('click', turnCardOver);
         console.log("match found")
      } else {
+         setTimeout( () => {
          firstCard.classList.remove('match');
          secondCard.classList.remove('match');
+         }, 1800);
      }
     }
 }
