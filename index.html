@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/apprun/dist/apprun-html.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="matchgame.css">
+        
+        <script src="Game.js"></script>
+    </head>
+    <body>
+        <h1 class="flex justify-center">Card Match!</h1>
+        <div style="width:750px; margin:auto; display:flex; flex-wrap: wrap;" id="matching-game">
+        <script>
+            const state = {
+                game: new Game()
+            }
+            const view = state => `
+                ${state.game.cards.map((card, index) => `<div class="flip-card"><div class=" flip-card-inner ${card.isCardFaceUp ? "faceup": "facedown"}" onclick="app.run('selectedCard', ${index})"> <img class="match-card-front " width="120px" src="${card.cardFront}"> <img class="match-card-back" width="120px" src="${card.cardRear}"></div></div>`).join("")}    
+            `
+            const update = {
+                selectedCard: (state, index) => {
+                    state.game.selectedCard(index)
+                    //setTimeout(() => {return state}, 1000)
+                    console.log(state)
+                    return state
+                }              
+            }
+            app.start('matching-game', state, view, update)
+        </script>
+        </div>
+    
+    <div class="attributions">
+        <a href="https://www.vecteezy.com/free-vector/football">Football Vectors by Vecteezy</a>
+        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+        </div>
+    </body>
+</html>
